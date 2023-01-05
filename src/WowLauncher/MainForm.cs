@@ -23,6 +23,7 @@ namespace WowLauncher
             config = ConfigFileUtils.Load<WowLauncherConfig>();
             if (config == null)
                 config = new WowLauncherConfig();
+            txtServerHost.Text = config.ServerHost;
         }
 
 
